@@ -1,0 +1,246 @@
+/* login page css starts */
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.login-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.btn-primary {
+    width: 100%;
+    position: relative;
+}
+
+.spinner-border {
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+}
+
+.shake {
+    animation: shake 0.3s;
+    border-color: #dc3545 !important;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* login page css ends */
+
+/* dashboard page css starts */
+
+.body-dashboard {
+    background-color: #f2f4f8;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 80px;
+    padding-top: 50px;
+}
+
+.category-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-sidebar h5 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.category-sidebar .category {
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.category-sidebar .category:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.category-sidebar .category.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.item-section {
+    margin-bottom: 2rem;
+}
+
+.item-section:not(:last-child) {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.item-card {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.item-name-qty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.quantity-input {
+    width: 60px;
+    text-align: center;
+    padding: 0.25rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ced4da;
+}
+
+.price-ctrl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #198754;
+    font-size: 1.1rem;
+}
+
+.form-check-input {
+    margin: 0;
+}
+
+#searchBox {
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    font-size: 1rem;
+}
+
+#addToCartBtn {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#addToCartBtn:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+    max-width: 300px;
+}
+
+/* dashboard page css ends */
+
+/* cart page css starts */
+.cart-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+}
+
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #198754;
+}
+
+.btn-group-custom {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card h5 {
+    font-size: 1.1rem;
+}
+
+.card input[type="number"] {
+    text-align: center;
+}
+
+/* cart page css ends */
